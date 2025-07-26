@@ -1,0 +1,35 @@
+# Ignore all node_modules folders
+**/node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files
+.env
+.env.*
+
+# OS system files
+.DS_Store
+Thumbs.db
+
+# Build outputs (React, Angular, etc.)
+**/dist/
+**/build/
+
+# IDE/editor settings
+.vscode/
+.idea/
+
+# Uploaded files (if not needed in repo)
+uploads/
+
+# Optional: Ignore package-lock.json (not always recommended)
+# package-lock.json
+
+# Bat/Shell scripts (optional to ignore)
+*.bat
+*.sh

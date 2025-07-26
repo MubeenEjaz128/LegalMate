@@ -1,0 +1,63 @@
+{
+  "name": "legalmate",
+  "version": "1.0.0",
+  "description": "AI-Powered Legal Consultation Platform for Pakistan",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\" \"npm run dev:ai\"",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && npm start",
+    "dev:ai": "cd ai-backend && python app.py",
+    "install:all": "npm install && cd frontend && npm install && cd ../backend && npm install",
+    "build": "cd frontend && npm run build",
+    "test": "node test-automation.js",
+    "test:video": "node video-call-test.js",
+    "test:mobile": "echo 'Mobile testing requires manual browser testing'",
+    "test:performance": "echo 'Performance testing requires load testing tools'",
+    "test:all": "npm run test && npm run test:video",
+    "test:api": "cd backend && npm test",
+    "test:frontend": "cd frontend && npm test",
+    "seed": "cd backend && node seed-data.js",
+    "start": "npm run dev"
+  },
+  "keywords": [
+    "legal",
+    "consultation",
+    "ai",
+    "chatbot",
+    "pakistan",
+    "punjab",
+    "lawyers",
+    "react",
+    "nodejs",
+    "flask"
+  ],
+  "author": "LegalMate Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "vite-plugin-node-polyfills": "^0.24.0"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/legalmate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/legalmate/issues"
+  },
+  "homepage": "https://github.com/your-username/legalmate#readme",
+  "dependencies": {
+    "@stripe/react-stripe-js": "^3.7.0",
+    "@stripe/stripe-js": "^7.5.0",
+    "axios": "^1.10.0",
+    "buffer": "^6.0.3",
+    "framer-motion": "^12.23.6",
+    "process": "^0.11.10",
+    "socket.io-client": "^4.8.1",
+    "tailwindcss": "^4.1.11"
+  }
+}
